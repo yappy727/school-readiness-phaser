@@ -1,70 +1,251 @@
-# Getting Started with Create React App
+# 小学校入学準備知育アプリ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+4-6歳のお子さま向けの楽しい学習ゲームです。ひらがな、カタカナ、数字、時計の読み方を遊びながら学べます。
 
-## Available Scripts
+## 🎯 対象年齢
+- **4-6歳** のお子さま
+- **発達障害・グレーゾーン** のお子さまにも配慮した設計
 
-In the project directory, you can run:
+## 🎮 学習ゲーム
 
-### `npm start`
+### 📝 ひらがな学習
+ひらがなの文字を見て、正しい文字を選ぶゲームです。
+- **行選択**: あ行〜わ行、全ての行から選択可能
+- **単語数**: 42単語（各行に対応した親しみやすい言葉）
+- **ゲーム方式**: ○に入る文字を4択から選択
+- **ヒント機能**: 
+  - ヒントボタンで表示（10秒間）
+  - 間違えた時も自動表示
+  - 音声読み上げ付き
+- **イラスト**: 単語に合わせた楽しいイラスト付き
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📝 カタカナ学習  
+カタカナの文字を見て、正しい文字を選ぶゲームです。
+- **行選択**: ア行〜ワ行、全ての行から選択可能
+- **単語数**: 42単語（外来語・カタカナ語）
+- **ゲーム方式**: ○に入る文字を4択から選択
+- **ヒント機能**: ひらがな学習と同じ
+- **特徴**: 詳細で美しいイラスト付き
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔢 すうじ学習（4レベル）
+りんごを数えて、正しい数字を答えるゲームです。
 
-### `npm test`
+#### レベル選択
+- **レベル1**: 1-3の数字（かんたん）
+- **レベル2**: 1-5の数字（ふつう）  
+- **レベル3**: 1-10の数字（ちょっとむずかしい）
+- **レベル4**: 1-20の数字（むずかしい）
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 遊び方
+1. 画面に表示されたりんごをタップして数える
+2. 数え終わったら、下のボタンで答えを選ぶ
+3. 正解すると花火のエフェクトが出る！
+4. **5問正解でレベルクリア！**
 
-### `npm run build`
+#### 特徴
+- レベル2以上では同じ数が繰り返し出題されない
+- りんごは5個単位でグループ化されて見やすい配置
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🕐 とけい学習（4レベル）
+時計の針を見て、正しい時刻を答えるゲームです。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### レベル選択
+- **レベル1**: ちょうど○時（1じ、2じ...）
+- **レベル2**: ○時半（1じはん、2じはん...）
+- **レベル3**: 5分きざみ（○じ5ふん、○じ10ふん...）
+- **レベル4**: 1分きざみ（○じ○○ふん）
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 遊び方
+1. 時計の針が指している時刻を読む
+2. 下のボタンから正しい時刻を選ぶ
+3. レベル3・4では同じ時間の違う分だけが選択肢に出る
+4. **5問正解でレベルクリア！**
 
-### `npm run eject`
+#### 特徴
+- 同じ時刻が繰り返し出題されない
+- 分かりやすいアナログ時計表示
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎵 音・音楽について
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### BGM（背景音楽）
+- ポップで楽しいメロディーが自動で流れます
+- 音量は控えめに設定してあります
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 効果音
+- **ボタンを押したとき**: ピッ♪
+- **正解したとき**: ピロリロリン♪（明るい音）
+- **間違ったとき**: ブー（低い音）
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 音量調整
+音量は**お使いのデバイス（PC・スマホ・タブレット）の本体音量**で調整してください。
 
-## Learn More
+## 🎨 デザインの特徴
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 色分け
+各学習ゲームは色で区別されています：
+- **ひらがな**: ピンク色
+- **カタカナ**: 紫色  
+- **すうじ**: 赤色
+- **とけい**: オレンジ色
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### やさしい設計
+- **大きなボタン**: 小さなお子さまでも押しやすい
+- **はっきりした色**: 見やすいコントラスト
+- **シンプルな画面**: 余計な情報がない
+- **わかりやすいアニメーション**: 楽しくて分かりやすい動き
 
-### Code Splitting
+### 学習サポート機能
+- **残り問題数表示**: あと何問でクリアか分かる
+- **ヒント機能**: 困った時は助けてもらえる
+- **音声読み上げ**: 耳でも学習できる
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🖥️ 使えるデバイス
 
-### Analyzing the Bundle Size
+### パソコン
+- **Windows**: Chrome、Edge、Firefox
+- **Mac**: Chrome、Safari、Firefox
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### スマートフォン・タブレット  
+- **iPhone/iPad**: Safari（iOS 14以上）
+- **Android**: Chrome（Android 8以上）
 
-### Making a Progressive Web App
+## 🚀 はじめ方
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 開発版の起動方法
+1. **必要なソフトウェアのインストール**
+   - Node.js (v18以上)
+   - npm または yarn
 
-### Advanced Configuration
+2. **プロジェクトのセットアップ**
+   ```bash
+   # リポジトリをクローン
+   git clone [リポジトリURL]
+   
+   # プロジェクトディレクトリに移動
+   cd school-readiness-phaser
+   
+   # 依存関係をインストール
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. **開発サーバーの起動**
+   ```bash
+   npm run dev
+   ```
 
-### Deployment
+4. **ブラウザでアクセス**
+   - http://localhost:3000 を開く
+   - 学習したいゲームのボタンをタップ
+   - レベルを選んで学習開始！
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### ビルド版の作成
+```bash
+# プロダクションビルド
+npm run build
 
-### `npm run build` fails to minify
+# ビルドしたファイルをプレビュー
+npm run preview
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👶 発達障害・グレーゾーンのお子さまへの配慮
+
+### 感覚過敏への配慮
+- **音量**: BGMは控えめ、効果音ははっきり
+- **光**: 激しい点滅や眩しい色は使用しません
+- **動き**: ゆっくりとした優しいアニメーション
+
+### 認知特性への配慮  
+- **一度にひとつ**: 画面には必要な情報だけ表示
+- **予測しやすい**: ボタンの場所や動作が一定
+- **自分のペース**: レベル選択で難易度調整可能
+- **間違っても大丈夫**: ヒント機能で学習をサポート
+
+### 学習サポート
+- **視覚的**: 文字・数字・時計すべて目で見て学習
+- **聴覚的**: 音でも正解・不正解が分かる、音声読み上げ
+- **成功体験**: 5問でクリアできる達成感
+
+## 🎓 学習効果
+
+### 小学校入学準備
+- **ひらがな・カタカナ**: 文字の認識力向上
+- **数の概念**: 1-20までの数え方、5の概念
+- **時計**: 時刻の読み方の基礎
+- **集中力**: ゲーム形式で楽しく集中力を養う
+
+### 段階的学習
+レベル選択により、お子さまの成長に合わせて段階的に学習できます。
+- **レベル1**: 基礎の基礎から
+- **レベル2**: 少しステップアップ  
+- **レベル3**: 応用レベル
+- **レベル4**: 入学準備完了レベル
+
+## 💡 保護者の方へ
+
+### 学習時間の目安
+- **1回10-15分程度**がおすすめです
+- 5問でクリアなので、短時間で達成感が得られます
+- お子さまの様子を見ながら調整してください
+
+### 一緒に学習
+- お子さまと一緒に画面を見ながら学習すると効果的です
+- 正解したときは一緒に喜んであげてください
+- 間違ってもヒントが出るので「見てごらん」と声をかけてあげてください
+
+### 学習の記録
+現在は学習履歴の保存機能はありませんが、お子さまの成長を見守り、励ましてあげることが一番大切です。
+
+## 🔧 トラブルシューティング
+
+### 音が出ない
+1. デバイスの音量を確認してください
+2. ブラウザの音量設定を確認してください  
+3. 他のアプリで音が出るか確認してください
+
+### ゲームが動かない
+1. ブラウザを最新版に更新してください
+2. ページを再読み込み（F5キー）してください
+3. 他のブラウザで試してみてください
+
+### ボタンが反応しない
+1. 画面を強く押しすぎていないか確認してください
+2. ページを再読み込みしてください
+3. ブラウザのキャッシュをクリアしてください
+
+## 🛠️ 技術仕様
+
+### 使用技術
+- **ゲームエンジン**: Phaser 3.90.0
+- **フロントエンド**: React 19.1.0 + TypeScript
+- **ビルドツール**: Vite
+- **音声**: Web Audio API
+- **音声合成**: Web Speech API
+
+### プロジェクト構造
+```
+src/
+├── game/                    # Phaser ゲーム関連
+│   ├── PhaserGame.ts       # ゲームマネージャー
+│   ├── AudioManager.ts     # 音響システム
+│   └── scenes/             # ゲームシーン
+├── components/             # React コンポーネント
+├── App.tsx                # メインアプリ
+└── main.tsx              # エントリーポイント
+```
+
+## 📧 お問い合わせ
+
+ご質問やご要望がございましたら、お気軽にお問い合わせください。
+
+---
+
+**楽しく学んで、小学校入学の準備をしよう！** 🌟
+
+## 📝 更新履歴
+
+### 2024年最新版
+- ひらがな・カタカナゲームにヒントシステムを追加
+- 数字・時計ゲームを5問クリア制に変更
+- 同じ問題が繰り返されない機能を追加
+- ボタン配置や画面遷移の不具合を修正
+- 音声読み上げ機能を実装
