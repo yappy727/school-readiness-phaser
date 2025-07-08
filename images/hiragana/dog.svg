@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="100" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- いぬ（犬）のイラスト -->
+  <defs>
+    <radialGradient id="dogGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#F5DEB3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D2691E;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 顔（楕円形） -->
+  <ellipse cx="60" cy="45" rx="25" ry="20" fill="url(#dogGradient)"/>
+  
+  <!-- 耳（垂れ耳） -->
+  <ellipse cx="40" cy="30" rx="9" ry="15" fill="url(#dogGradient)"/>
+  <ellipse cx="80" cy="30" rx="9" ry="15" fill="url(#dogGradient)"/>
+  
+  <!-- 耳の内側 -->
+  <ellipse cx="40" cy="30" rx="5" ry="10" fill="#FFB6C1"/>
+  <ellipse cx="80" cy="30" rx="5" ry="10" fill="#FFB6C1"/>
+  
+  <!-- マズル部分 -->
+  <ellipse cx="60" cy="55" rx="12" ry="8" fill="#F5DEB3"/>
+  
+  <!-- 鼻 -->
+  <ellipse cx="60" cy="50" rx="4" ry="3" fill="#000"/>
+  
+  <!-- 口 -->
+  <path d="M 60 53 L 52 60 M 60 53 L 68 60" stroke="#000" stroke-width="3" fill="none"/>
+  
+  <!-- 目 -->
+  <ellipse cx="52" cy="40" rx="4" ry="5" fill="#000"/>
+  <ellipse cx="68" cy="40" rx="4" ry="5" fill="#000"/>
+  
+  <!-- 白目のハイライト -->
+  <circle cx="54" cy="38" r="1.5" fill="#FFF"/>
+  <circle cx="70" cy="38" r="1.5" fill="#FFF"/>
+  
+  <!-- 舌 -->
+  <ellipse cx="63" cy="58" rx="3" ry="2" fill="#FF69B4"/>
+</svg>

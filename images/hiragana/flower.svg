@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="100" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- はな（花）のイラスト -->
+  <defs>
+    <radialGradient id="petalGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFB6C1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF69B4;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="stemGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#32CD32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#228B22;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 茎 -->
+  <rect x="57" y="55" width="6" height="30" fill="url(#stemGradient)"/>
+  
+  <!-- 葉っぱ -->
+  <ellipse cx="45" cy="65" rx="6" ry="4" fill="url(#stemGradient)"/>
+  <ellipse cx="75" cy="65" rx="6" ry="4" fill="url(#stemGradient)"/>
+  
+  <!-- 花びら（5枚の桜型） -->
+  <g transform="translate(60, 40)">
+    <!-- 花びら1 -->
+    <g transform="rotate(0)">
+      <ellipse cx="0" cy="-15" rx="6" ry="10" fill="url(#petalGradient)"/>
+      <path d="M -4 -20 Q 0 -25 4 -20 Q 0 -15 -4 -20" fill="url(#petalGradient)"/>
+    </g>
+    <!-- 花びら2 -->
+    <g transform="rotate(72)">
+      <ellipse cx="0" cy="-15" rx="6" ry="10" fill="url(#petalGradient)"/>
+      <path d="M -4 -20 Q 0 -25 4 -20 Q 0 -15 -4 -20" fill="url(#petalGradient)"/>
+    </g>
+    <!-- 花びら3 -->
+    <g transform="rotate(144)">
+      <ellipse cx="0" cy="-15" rx="6" ry="10" fill="url(#petalGradient)"/>
+      <path d="M -4 -20 Q 0 -25 4 -20 Q 0 -15 -4 -20" fill="url(#petalGradient)"/>
+    </g>
+    <!-- 花びら4 -->
+    <g transform="rotate(216)">
+      <ellipse cx="0" cy="-15" rx="6" ry="10" fill="url(#petalGradient)"/>
+      <path d="M -4 -20 Q 0 -25 4 -20 Q 0 -15 -4 -20" fill="url(#petalGradient)"/>
+    </g>
+    <!-- 花びら5 -->
+    <g transform="rotate(288)">
+      <ellipse cx="0" cy="-15" rx="6" ry="10" fill="url(#petalGradient)"/>
+      <path d="M -4 -20 Q 0 -25 4 -20 Q 0 -15 -4 -20" fill="url(#petalGradient)"/>
+    </g>
+  </g>
+  
+  <!-- 花の中心 -->
+  <circle cx="60" cy="40" r="6" fill="#FFD700"/>
+  
+  <!-- おしべ -->
+  <circle cx="57" cy="37" r="1" fill="#FFA500"/>
+  <circle cx="63" cy="37" r="1" fill="#FFA500"/>
+  <circle cx="60" cy="43" r="1" fill="#FFA500"/>
+  <circle cx="55" cy="42" r="1" fill="#FFA500"/>
+  <circle cx="65" cy="42" r="1" fill="#FFA500"/>
+</svg>
