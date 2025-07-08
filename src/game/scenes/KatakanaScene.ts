@@ -2456,7 +2456,8 @@ export default class KatakanaScene extends Phaser.Scene {
     this.illustrationDisplay.lineStyle(1, 0x8B4513, 0.6);
     for (let i = 0; i < 5; i++) {
       this.illustrationDisplay.beginPath();
-      this.illustrationDisplay.ellipse(x - 15 + i * 8, y - 10, 15, 3, 0, 0, Math.PI * 2);
+      this.illustrationDisplay.moveTo(x - 15 + i * 8, y - 10);
+      this.drawCurve(x - 15 + i * 8, y - 10, x - 10 + i * 8, y - 7, x - 5 + i * 8, y - 10);
       this.illustrationDisplay.strokePath();
     }
     
